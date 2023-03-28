@@ -1,0 +1,70 @@
+
+.model-cars{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 7rem 6rem;
+    gap: 1.5rem;
+}
+.each-car{
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    border: 1px solid #ababab;
+    margin: 0 1rem;
+}
+.car-model-text{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+}
+.car-model-text span p{
+color: #777;
+}
+.car-model-text h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.car-img img{
+    width: 100%;
+    height: 15rem;
+}
+.each-car button{
+    background-color: #ff4d30;
+    border: 2px solid #ff4d30;
+    border-radius: 0.3rem;
+    box-shadow: 0 10px 15px 0 rgba(255,83,48,.35);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.8rem 2rem;
+    transition: all .3s;
+    font-weight: 700;
+    color: #fff;
+    margin: 1rem;
+}
+.car-name{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.car-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+hr{
+    border: 1px solid #777;
+    width: 18rem;
+}
+@media only screen and (max-width:1180px){
+    .model-cars{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width:960px){
+    .model-cars{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

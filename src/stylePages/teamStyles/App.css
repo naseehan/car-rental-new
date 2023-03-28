@@ -1,0 +1,42 @@
+.team-people{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem 6rem;
+}
+.team-person{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 20px 10px 0 rgba(0,0,0,.08);
+}
+.person-img img{
+    width: 100%;
+    height: 23rem;
+}
+.person-text{
+    margin-bottom: 20px;
+}
+.person-text h2{
+    font-weight: 600;
+}
+.person-text p{
+    color: #777;
+}
+@media only screen and (max-width:1130px){
+    .team-people{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     
+    }
+}
+@media only screen and (max-width:890px){
+    .team-people{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 4rem 2rem;
+     
+    }
+}

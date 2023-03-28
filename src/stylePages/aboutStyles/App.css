@@ -1,0 +1,51 @@
+.about-company{
+    display: flex;
+    gap: 4rem;
+    padding: 4rem 8rem;
+}
+.company-text p{
+font-size: 1.2rem;
+font-weight: 600;
+}
+.company-text h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.company-text p:nth-child(3){
+    color: #777;
+    font-size: unset;
+    font-weight: normal;
+}
+.company-outlets{
+    display: flex;
+    gap: 2rem;
+}
+.buildings {
+    display: grid;
+    gap: 0.5rem;
+}
+.buildings span{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.buildings h4{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.buildings p{
+    color: #777;
+    font-size: unset;
+    font-weight: normal;
+}
+@media only screen and (max-width:1140px){
+    .about-company{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .company-text{
+        max-width: 29rem;
+        text-align: center;
+    }
+}
