@@ -3,20 +3,20 @@ import mustang from "../cars/mustang.png"
 import lambo from "../cars/lambo.png"
 import lotus from "../cars/lotus.png"
 import ferrari from "../cars/ferrari.png"
-
+import ev6 from "../cars/kiaev6.jpg"
 export const CAR_DATA = [
     [
       {
-        name: "BMW",
-        price: "100",
-        img: BMW,
+        name: "KIA EV6",
+        price: "60L",
+        img: ev6,
         model: "BMW 3",
-        mark: "BMW ",
-        year: "2008",
+        mark: "KIA ",
+        year: "2021",
         doors: "4/5",
         air: "Yes",
-        transmission: "Manual",
-        fuel: "Diesel",
+        transmission: "Automatic",
+        fuel: "Electric",
       },
     ],
     [

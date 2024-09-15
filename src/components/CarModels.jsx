@@ -4,6 +4,7 @@ import mustang from "../cars/mustang.png"
 import lambo from "../cars/lambo.png"
 import lotus from "../cars/lotus.png"
 import ferrari from "../cars/ferrari.png"
+import ev6 from '../cars/kiaev6.jpg'
 import { CAR_DATA } from './carData'
 import CarBox from './CarBox'
 
@@ -12,7 +13,7 @@ function CarModels() {
   const[car, setCar] = useState(mustang)
 
   const[carDetails, setCarDetails] = useState(CAR_DATA[1])
-// console.log(carDetails[0][0].name);
+
   return (
     <section className='pick-section'>
       <div className="container">
@@ -29,9 +30,9 @@ function CarModels() {
               setCarDetails(CAR_DATA[1])
             }} >Mustang</button>
             <button onClick={ () => {
-              setCar(BMW)
+              setCar(ev6)
               setCarDetails(CAR_DATA[0])
-            }}>BMW</button>
+            }}>KIA</button>
             <button onClick={ () => {
               setCar(lotus)
               setCarDetails(CAR_DATA[2])
